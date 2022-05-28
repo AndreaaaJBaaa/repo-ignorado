@@ -1,0 +1,24 @@
+/carperta-ignorable
+
+#Se ignorará la carpeta que coincida con el nombre sin importar la ubicación
+**/ContenidoSecreto
+
+#Se ignorará el arhivo sin importar dónde esté
+**/config.php
+
+#Se ignora los archivos con extensión pdf en la ruta indicada
+#excepto aquellos que se encuentren dentro de la carpeta docs
+assets/.pdf!*/docs
+
+#Se ignoran todos los archivos que tengan la extensión txt
+*.txt
+
+#Sin importar si otra línea indica que se ignore, permite que se haga commit
+#de los archivos dentro de images que terminen con -system
+images/!*-system*
+
+#Se ignorarán todos los archivos marcados con la bandera -local
+*-local*!*-experimento*
+
+#Se ignorarán todos los archivos marcados con la bandera -prueba
+*-prueba*!*-experimento*
